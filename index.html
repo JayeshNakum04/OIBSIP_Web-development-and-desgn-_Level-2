@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Portfolio - Web Development Tasks</title>
+    <!-- task1 -->
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 OASIS INFOBYTE SIP </h1>
+            <h2>Web Development and Design</h2><br>
+            <p>Level 2 Tasks Showcase</p>
+        </div>
+
+        <div class="nav-menu">
+            <button class="nav-btn active" onclick="showPage('home')">🏠 Home</button>
+            <button class="nav-btn" onclick="showPage('calculator')">🧮 Calculator</button>
+            <button class="nav-btn" onclick="showPage('tribute')">👨‍🔬 Tribute</button>
+            <button class="nav-btn" onclick="showPage('todo')">📝 Todo App</button>
+            <button class="nav-btn" onclick="showPage('login')">🔐 Login</button>
+        </div>
+
+        <!-- Home Page -->
+        <div class="page active" id="home">
+            <h2>Welcome to My website</h2>
+            <p>This website showcases four core web development tasks completed during my internship. Each task demonstrates different aspects of modern web development using HTML, CSS, and JavaScript.</p>
+            
+            <div class="task-grid">
+                <div class="task-card" onclick="showPage('calculator')">
+                    <h3>🧮 Calculator</h3>
+                    <p>Interactive calculator with basic mathematical operations</p>
+                </div>
+                <div class="task-card" onclick="showPage('tribute')">
+                    <h3>👨‍🔬 Tribute Page</h3>
+                    <p>A beautiful tribute to the great mathematician Aryabhata</p>
+                </div>
+                <div class="task-card" onclick="showPage('todo')">
+                    <h3>📝 Todo App</h3>
+                    <p>Task management application with full CRUD operations</p>
+                </div>
+                <div class="task-card" onclick="showPage('login')">
+                    <h3>🔐 Authentication</h3>
+                    <p>User registration and login system with security</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator Page -->
+        <div class="page" id="calculator">
+            <h2>Task 1 </h2><br>
+            <h3>Calculatocr</h3>
+            <div class="calculator">
+                <input type="text" class="calc-display" id="calcDisplay" readonly>
+                <div class="calc-buttons">
+                    <button class="calc-btn operator" onclick="clearDisplay()">C</button>
+                    <button class="calc-btn operator" onclick="deleteLast()">⌫</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('/')">/</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('*')">×</button>
+                    
+                    <button class="calc-btn number" onclick="appendToDisplay('7')">7</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('8')">8</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('9')">9</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('-')">-</button>
+                    
+                    <button class="calc-btn number" onclick="appendToDisplay('4')">4</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('5')">5</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('6')">6</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('+')">+</button>
+                    
+                    <button class="calc-btn number" onclick="appendToDisplay('1')">1</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('2')">2</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('3')">3</button>
+                    <button class="calc-btn equals" onclick="calculate()" rowspan="2">=</button>
+                    
+                    <button class="calc-btn number" onclick="appendToDisplay('0')" style="grid-column: span 2;">0</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('.')">.</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tribute Page -->
+        <div class="page" id="tribute">
+            <div class="tribute-content">
+                <h2>Task 2</h2><br>
+                <h3>🌟 Tribute to Aryabhata</h3>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%23667eea'/%3E%3Ctext x='100' y='110' text-anchor='middle' fill='white' font-size='24' font-family='serif'%3EAryabhata%3C/text%3E%3C/svg%3E" alt="Aryabhata" class="tribute-image">
+                s
+                <h3>The Father of Indian Mathematics and Astronomy</h3>
+                <div class="tribute-text">
+                    <p><strong>Aryabhata (476-550 CE)</strong> was one of the greatest mathematicians and astronomers of ancient India. Born in Kusumapura (modern-day Patna), he revolutionized the understanding of mathematics and astronomy in the 5th century.</p>s
+                    
+                    <p>His most famous work, the <em>Aryabhatiya</em>, written when he was just 23 years old, contains extraordinary insights into mathematics and astronomy. He was the first to explain that the Earth rotates on its axis daily, and he calculated the length of the solar year as 365 days, 6 hours, 12 minutes, and 30 seconds - remarkably close to the modern value.</p>
+                    
+                    <p>Aryabhata's contributions to mathematics include the concept of zero as a number, the place value system, and methods for calculating square and cube roots. He also provided accurate approximations for π (pi) and developed the earliest known Indian trigonometric tables.</p>
+                    
+                    <p>In astronomy, he correctly explained the causes of lunar and solar eclipses, stating that the Moon and planets shine by reflected sunlight. His work influenced mathematicians and astronomers for centuries and laid the foundation for the Indian school of mathematics.</p>
+                    
+                    <p><em>"Time and space are eternal, but the universe is created and destroyed in cycles."</em> - This philosophy reflects his deep understanding of cosmic principles that continue to inspire scientists today.</p>
+                </div>
+                
+                <h4>🏆 Key Achievements:</h4>
+                <ul style="text-align: left; max-width: 500px; margin: 20px auto;">
+                    <li>First to state that Earth rotates on its axis</li>
+                    <li>Calculated Earth's circumference accurately</li>
+                    <li>Developed the place value system</li>
+                    <li>Approximated π to 4 decimal places</li>
+                    <li>Explained lunar and solar eclipses scientifically</li>
+                    <li>Created trigonometric tables</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Todo App Page -->
+        <div class="page" id="todo">
+            <div class="todo-container">
+                <h2>Task 3</h2><br>
+                <h3>📝 Todo Application</h3><br>
+                
+                <div class="todo-input-section">
+                    <input type="text" class="todo-input" id="todoInput" placeholder="Add a new task..." onkeypress="handleEnterKey(event)">
+                    <button class="todo-add-btn" onclick="addTodo()">Add Task</button>
+                </div>
+                
+                <div class="todo-sections">
+                    <div class="todo-section">
+                        <h3>📋 Pending Tasks (<span id="pendingCount">0</span>)</h3>
+                        <div id="pendingTasks"></div>
+                    </div>
+                    
+                    <div class="todo-section">
+                        <h3>✅ Completed Tasks (<span id="completedCount">0</span>)</h3>
+                        <div id="completedTasks"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Page -->
+        <div class="page" id="login">
+            <div class="login-container">
+                <h2>Task 4</h2><br>
+                <h3>🔐 User Authentication</h3>
+                
+                <div id="authForms">
+                    <div class="login-form" id="loginForm">
+                        <h3>Login</h3>
+                        <div class="form-group">
+                            <label>Username:</label>
+                            <input type="text" id="loginUsername" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" id="loginPassword" placeholder="Enter password">
+                        </div>
+                        <button class="form-btn" onclick="login()">Login</button>
+                        <div class="toggle-form" onclick="toggleAuthForm()">Don't have an account? Register here</div>
+                    </div>
+                    
+                    <div class="register-form" id="registerForm" style="display: none;">
+                        <h3>Register</h3>
+                        <div class="form-group">
+                            <label>Username:</label>
+                            <input type="text" id="registerUsername" placeholder="Choose username">
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" id="registerEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" id="registerPassword" placeholder="Choose password">
+                        </div>
+                        <button class="form-btn" onclick="register()">Register</button>
+                        <div class="toggle-form" onclick="toggleAuthForm()">Already have an account? Login here</div>
+                    </div>
+                </div>
+                
+                <div class="user-dashboard" id="userDashboard">
+                    <h3>🎉 Welcome to your Dashboard!</h3>
+                    <p>You have successfully logged in.</p>
+                    <p>User: <span id="currentUser"></span></p>
+                    <p>Login Time: <span id="loginTime"></span></p>
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
