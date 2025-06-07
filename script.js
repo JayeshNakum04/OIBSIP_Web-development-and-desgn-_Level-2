@@ -152,6 +152,22 @@
         }
 
         // Authentication Functions
+        // Show/hide password toggles
+    document.addEventListener('DOMContentLoaded', function () {
+        const loginPassword = document.getElementById('loginPassword');
+        const toggleLogin = document.getElementById('toggleLoginPassword');
+        toggleLogin.addEventListener('change', function () {
+            loginPassword.type = this.checked ? 'text' : 'password';
+        });
+
+            const registerPassword = document.getElementById('registerPassword');
+            const toggleRegister = document.getElementById('toggleRegisterPassword');
+            toggleRegister.addEventListener('change', function () {
+                registerPassword.type = this.checked ? 'text' : 'password';
+            });
+        });
+
+        
         function toggleAuthForm() {
             const loginForm = document.getElementById('loginForm');
             const registerForm = document.getElementById('registerForm');
