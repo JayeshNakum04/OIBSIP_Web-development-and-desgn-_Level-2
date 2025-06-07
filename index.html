@@ -156,11 +156,9 @@
                             <input type="text" id="loginUsername" placeholder="Enter username">
                         </div>
                         <div class="form-group">
-                            <label>Password:</label>
-                            <input type="password" id="loginPassword" placeholder="Enter password">
-                            <br>
-                            <br>
-                            <input type="checkbox" class="checkbox"> Show Password
+                             <label>Password:</label>
+                                <input type="password" id="loginPassword" placeholder="Enter password">
+                                <label><input type="checkbox" id="toggleLoginPassword"> Show Password</label>
                         </div>
                         <button class="form-btn" onclick="login()">Login</button>
                         <div class="toggle-form" onclick="toggleAuthForm()">Don't have an account? Register here</div>
@@ -178,10 +176,8 @@
                         </div>
                         <div class="form-group">
                             <label>Password:</label>
-                            <input type="password" id="registerPassword" placeholder="Choose password">
-                            <br>
-                            <br>
-                            <input type="checkbox" id="toggleRegisterPassword"> Show Password
+                          <input type="password" id="registerPassword" placeholder="Choose password">
+                         <label><input type="checkbox" id="toggleRegisterPassword"> Show Password</label>
                         </div>
                         <button class="form-btn" onclick="register()">Register</button>
                         <div class="toggle-form" onclick="toggleAuthForm()">Already have an account? Login here</div>
