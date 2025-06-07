@@ -11,6 +11,17 @@
             color: #333;
         }
 
+
+          footer{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            padding: 10px;
+            font-style: italic;
+            font-size: small;
+        }
+
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
